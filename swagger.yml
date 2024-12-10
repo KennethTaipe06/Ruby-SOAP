@@ -1,0 +1,19 @@
+
+openapi: 3.0.0
+info:
+  title: Hola Mundo SOAP API
+  version: 1.0.0
+paths:
+  /hello:
+    post:
+      summary: Retorna un mensaje de saludo
+      responses:
+        '200':
+          description: Respuesta exitosa
+          content:
+            text/xml:
+              schema:
+                type: object
+                properties:
+                  Message:
+                    type: string
