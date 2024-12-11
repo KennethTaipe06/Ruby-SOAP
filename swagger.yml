@@ -1,4 +1,3 @@
-
 openapi: 3.0.0
 info:
   title: Hola Mundo SOAP API
@@ -7,6 +6,7 @@ paths:
   /hello:
     post:
       summary: Retorna un mensaje de saludo
+      # Definición de respuesta en formato SOAP (XML)
       responses:
         '200':
           description: Respuesta exitosa
